@@ -16,6 +16,9 @@
 		E662A23C28F59F8C0047AFB4 /* burgerStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662A23B28F59F8C0047AFB4 /* burgerStoreTests.swift */; };
 		E662A24628F59F8C0047AFB4 /* burgerStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662A24528F59F8C0047AFB4 /* burgerStoreUITests.swift */; };
 		E662A24828F59F8C0047AFB4 /* burgerStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662A24728F59F8C0047AFB4 /* burgerStoreUITestsLaunchTests.swift */; };
+		E6ED12EF28F8438200438715 /* ViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED12EE28F8438200438715 /* ViewControllerMain.swift */; };
+		E6ED12F128F843DB00438715 /* ViewControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED12F028F843DB00438715 /* ViewControllerMenu.swift */; };
+		E6ED12F328F843F400438715 /* ViewControllerBuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED12F228F843F400438715 /* ViewControllerBuy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E662A24128F59F8C0047AFB4 /* burgerStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = burgerStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E662A24528F59F8C0047AFB4 /* burgerStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = burgerStoreUITests.swift; sourceTree = "<group>"; };
 		E662A24728F59F8C0047AFB4 /* burgerStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = burgerStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6ED12EE28F8438200438715 /* ViewControllerMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMain.swift; sourceTree = "<group>"; };
+		E6ED12F028F843DB00438715 /* ViewControllerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMenu.swift; sourceTree = "<group>"; };
+		E6ED12F228F843F400438715 /* ViewControllerBuy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				E662A22628F59F8B0047AFB4 /* SceneDelegate.swift */,
 				E662A22828F59F8B0047AFB4 /* ViewController.swift */,
 				E662A22A28F59F8B0047AFB4 /* Main.storyboard */,
+				E6ED12F228F843F400438715 /* ViewControllerBuy.swift */,
+				E6ED12F028F843DB00438715 /* ViewControllerMenu.swift */,
+				E6ED12EE28F8438200438715 /* ViewControllerMain.swift */,
 				E662A22D28F59F8C0047AFB4 /* Assets.xcassets */,
 				E662A22F28F59F8C0047AFB4 /* LaunchScreen.storyboard */,
 				E662A23228F59F8C0047AFB4 /* Info.plist */,
@@ -259,8 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E662A22928F59F8B0047AFB4 /* ViewController.swift in Sources */,
+				E6ED12F328F843F400438715 /* ViewControllerBuy.swift in Sources */,
 				E662A22528F59F8B0047AFB4 /* AppDelegate.swift in Sources */,
+				E6ED12F128F843DB00438715 /* ViewControllerMenu.swift in Sources */,
 				E662A22728F59F8B0047AFB4 /* SceneDelegate.swift in Sources */,
+				E6ED12EF28F8438200438715 /* ViewControllerMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
