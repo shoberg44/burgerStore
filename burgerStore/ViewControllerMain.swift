@@ -16,37 +16,25 @@ class ViewControllerMain: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   
+    @IBAction func toMenuButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "toMenuSegue", sender: self)
     }
-    */
-    
-    //this function is performed automaticly when performing segue is called
+    @IBAction func toBuyButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "toBuySegue", sender: self)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toMenuSegue"{
             let nvc = segue.destination as! ViewControllerMenu //force dsowncasts as ViewControllerBlue nvc stands for next view controller
             //nvc.name = textOutlet.text! //alows access within desitnation
         }
-    }
-    @IBAction func unwind(_ seg: UIStoryboardSegue) {
-        let svc = svc.source as! ViewControllerMenu
-        svc.textOutRed.text!
-    }
-    //this function is performed automaticly when performing segue is called
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toBuySegue"{
-            let nvc = segue.destination as! ViewControllerBuy //force dsowncasts as ViewControllerBlue nvc stands for next view controller
-            nvc.name = textOutlet.text! //alows access within desitnation
+                    let nvc = segue.destination as! ViewControllerMenu //force dsowncasts as ViewControllerBlue nvc stands for next view controller
+            //nvc.name = textOutlet.text! //alows access within desitnation
         }
     }
     @IBAction func unwind(_ seg: UIStoryboardSegue) {
-        print("unwind")
-        let svc = svc.source as! ViewControllerRed
-        svc.textOutRed.text!
+        let svc = seg.source as! ViewControllerMain
+        //svc.textOutRed.text!
     }
 }

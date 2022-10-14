@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="burgerStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewControllerMain" customModule="burgerStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,6 +50,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Finish And Pay"/>
+                                <connections>
+                                    <action selector="toBuyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RA8-fH-Ysy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbh-7r-O73">
                                 <rect key="frame" x="16" y="645" width="159" height="68"/>
@@ -58,22 +61,25 @@
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add Items"/>
+                                <connections>
+                                    <action selector="toMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uje-93-6aQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="XmP-zc-qGq"/>
+                    <navigationItem key="navigationItem" title="Home" id="XmP-zc-qGq"/>
                     <connections>
-                        <segue destination="DtB-Yl-50n" kind="show" id="iFk-BR-DGo"/>
-                        <segue destination="qcf-Wh-ZxG" kind="show" id="0Tv-t8-m5U"/>
+                        <segue destination="DtB-Yl-50n" kind="show" identifier="toMenuSegue" id="iFk-BR-DGo"/>
+                        <segue destination="qcf-Wh-ZxG" kind="show" identifier="toBuySegue" id="0Tv-t8-m5U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="966.15384615384608" y="3.5545023696682461"/>
         </scene>
-        <!--View Controller Buy-->
+        <!--Order-->
         <scene sceneID="hUb-l4-wgD">
             <objects>
                 <viewController id="qcf-Wh-ZxG" customClass="ViewControllerBuy" customModule="burgerStore" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,13 +89,13 @@
                         <viewLayoutGuide key="safeArea" id="PtD-UZ-qpv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="NlP-Dt-j4c"/>
+                    <navigationItem key="navigationItem" title="Order" id="NlP-Dt-j4c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSU-Ni-13t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1892" y="364"/>
         </scene>
-        <!--View Controller Menu-->
+        <!--Menu-->
         <scene sceneID="BdC-ql-Rg4">
             <objects>
                 <viewController id="DtB-Yl-50n" customClass="ViewControllerMenu" customModule="burgerStore" customModuleProvider="target" sceneMemberID="viewController">
@@ -99,7 +105,7 @@
                         <viewLayoutGuide key="safeArea" id="d5a-At-pbS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="L3B-gw-wrz"/>
+                    <navigationItem key="navigationItem" title="Menu" id="L3B-gw-wrz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wb4-7F-9hY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

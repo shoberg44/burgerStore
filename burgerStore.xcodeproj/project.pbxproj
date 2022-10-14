@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E634A6B628F9922600F9BBB3 /* BurgerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E634A6B528F9922600F9BBB3 /* BurgerClass.swift */; };
 		E662A22528F59F8B0047AFB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662A22428F59F8B0047AFB4 /* AppDelegate.swift */; };
 		E662A22728F59F8B0047AFB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662A22628F59F8B0047AFB4 /* SceneDelegate.swift */; };
 		E662A22928F59F8B0047AFB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662A22828F59F8B0047AFB4 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E634A6B528F9922600F9BBB3 /* BurgerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerClass.swift; sourceTree = "<group>"; };
 		E662A22128F59F8B0047AFB4 /* burgerStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = burgerStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E662A22428F59F8B0047AFB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E662A22628F59F8B0047AFB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		E662A21828F59F8B0047AFB4 = {
 			isa = PBXGroup;
 			children = (
+				E634A6B528F9922600F9BBB3 /* BurgerClass.swift */,
 				E662A22328F59F8B0047AFB4 /* burgerStore */,
 				E662A23A28F59F8C0047AFB4 /* burgerStoreTests */,
 				E662A24428F59F8C0047AFB4 /* burgerStoreUITests */,
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E634A6B628F9922600F9BBB3 /* BurgerClass.swift in Sources */,
 				E662A22928F59F8B0047AFB4 /* ViewController.swift in Sources */,
 				E6ED12F328F843F400438715 /* ViewControllerBuy.swift in Sources */,
 				E662A22528F59F8B0047AFB4 /* AppDelegate.swift in Sources */,
