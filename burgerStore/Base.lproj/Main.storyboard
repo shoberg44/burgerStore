@@ -102,6 +102,17 @@
                     <view key="view" contentMode="scaleToFill" id="eRL-NE-9rz">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qZY-yi-E3K">
+                                <rect key="frame" x="16" y="163" width="358" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Ketchup"/>
+                                    <segment title="BBQ Sauce"/>
+                                    <segment title="Mayo"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="d5a-At-pbS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -109,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wb4-7F-9hY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="-304"/>
+            <point key="canvasLocation" x="1893.8461538461538" y="-304.26540284360186"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CMf-y3-ugM">
