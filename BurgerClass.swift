@@ -7,12 +7,6 @@
 
 import Foundation
 public class Burger{
-    enum btype{
-        case cheese,plain,custom,deluxe
-    }
-    enum burgerDone{
-        case blueRare, rare, mediumRare, medium, mediumWell, wellDone
-    }
     var ketchup: Bool
     var patty: Int
     var bbqsauce: Bool
@@ -22,7 +16,8 @@ public class Burger{
     var onion: Bool
     var bacon: Bool
     var mayo: Bool
-    init(ketchup: Bool, patty: Int, bbqsauce: Bool, mushroom: Bool, lettuce: Bool, tomato: Bool, onion: Bool, bacon: Bool, mayo: Bool){
+    var cheese: Bool
+    init(ketchup: Bool, patty: Int, bbqsauce: Bool, mushroom: Bool, lettuce: Bool, tomato: Bool, onion: Bool, bacon: Bool, mayo: Bool, cheese: Bool){
         self.ketchup = ketchup // self refers to global level varable
         self.patty = patty
         self.bbqsauce = bbqsauce
@@ -32,6 +27,7 @@ public class Burger{
         self.onion = onion
         self.bacon = bacon
         self.mayo = mayo
+        self.cheese = cheese
     }
     init(){
         ketchup = false
@@ -43,6 +39,7 @@ public class Burger{
         onion = false
         bacon = false
         mayo = false
+        cheese = false
     }
     
 }

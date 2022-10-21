@@ -14,7 +14,7 @@ class ViewControllerMain: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    var burgers: [Burger] = []
 
    
     @IBAction func toMenuButton(_ sender: UIButton) {
@@ -35,6 +35,9 @@ class ViewControllerMain: UIViewController {
     }
     @IBAction func unwind(_ seg: UIStoryboardSegue) {
         let svc = seg.source as! ViewControllerMain
+        burgers = svc.burgers
+        print(burgers)
+        print("ahh")
         //svc.textOutRed.text!
     }
 }
