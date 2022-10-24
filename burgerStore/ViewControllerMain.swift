@@ -8,7 +8,8 @@
 import UIKit
 
 class ViewControllerMain: UIViewController {
-
+    @IBOutlet weak var menuOutlet: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +27,6 @@ class ViewControllerMain: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toMenuSegue"{
             let nvc = segue.destination as! ViewControllerMenu //force dsowncasts as ViewControllerBlue nvc stands for next view controller
-            //nvc.name = textOutlet.text! //alows access within desitnation
         }
         if segue.identifier == "toBuySegue"{
                     let nvc = segue.destination as! ViewControllerMenu //force dsowncasts as ViewControllerBlue nvc stands for next view controller
@@ -34,10 +34,43 @@ class ViewControllerMain: UIViewController {
         }
     }
     @IBAction func unwind(_ seg: UIStoryboardSegue) {
-        let svc = seg.source as! ViewControllerMain
+        let svc = seg.source as! ViewControllerMenu
         burgers = svc.burgers
-        print(burgers)
-        print("ahh")
-        //svc.textOutRed.text!
+        updateMenu(burgers)
+    }
+    func updateMenu(_ newArray: [Burger]){
+        menuOutlet.text! = ""
+        for i in 0..<newArray.count{
+            menuOutlet.text = menuOutlet.text! + "\(newArray[i].patty) patty's"
+            if newArray[i].cheese{
+                menuOutlet.text = menuOutlet.text! + ", cheese"
+            }
+            if newArray[i].mayo{
+                menuOutlet.text = menuOutlet.text! + ", mayo"
+            }
+            if newArray[i].bacon{
+                menuOutlet.text = menuOutlet.text! + ", bacon"
+            }
+            if newArray[i].onion{
+                menuOutlet.text = menuOutlet.text! + ", onion"
+            }
+            if newArray[i].tomato{
+                menuOutlet.text = menuOutlet.text! + ", tomato"
+            }
+            if newArray[i].lettuce{
+                menuOutlet.text = menuOutlet.text! + ", lettuce"
+            }
+            if newArray[i].mushroom{
+                menuOutlet.text = menuOutlet.text! + ", mushroom"
+            }
+            if newArray[i].ketchup{
+                menuOutlet.text = menuOutlet.text! + ", ketchup"
+            }
+            if newArray[i].bbqsauce{
+                menuOutlet.text = menuOutlet.text! + ", bbqsauce"
+            }
+            menuOutlet.text?.append("\n")
+            print("burgered")
+        }
     }
 }

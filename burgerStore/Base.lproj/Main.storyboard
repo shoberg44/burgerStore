@@ -71,6 +71,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="XmP-zc-qGq"/>
                     <connections>
+                        <outlet property="menuOutlet" destination="vdr-AY-kRQ" id="w12-FE-LWh"/>
                         <segue destination="DtB-Yl-50n" kind="show" identifier="toMenuSegue" id="iFk-BR-DGo"/>
                         <segue destination="qcf-Wh-ZxG" kind="show" identifier="toBuySegue" id="0Tv-t8-m5U"/>
                     </connections>
@@ -264,7 +265,7 @@
                         <outlet property="burgerBarOutlet" destination="qZY-yi-E3K" id="jIY-ww-C9V"/>
                         <outlet property="burgerCookedController" destination="SIC-fw-9oX" id="NOR-v6-bwz"/>
                         <outlet property="toppingView" destination="6Ax-nY-Xo6" id="3ql-NZ-ScX"/>
-                        <segue destination="8O9-Y9-OpC" kind="unwind" unwindAction="unwind:" id="JfL-4K-10Z"/>
+                        <segue destination="8O9-Y9-OpC" kind="unwind" identifier="toMainSegue" unwindAction="unwind:" id="UfB-Te-pnr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wb4-7F-9hY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

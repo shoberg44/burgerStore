@@ -184,6 +184,10 @@ class ViewControllerMenu: UIViewController {
             burgers.append(Burger(ketchup: ketchup, patty: patty, bbqsauce: bbqsauce, mushroom: mushroom, lettuce: lettuce, tomato: tomato, onion: onion, bacon: bacon, mayo: mayo, cheese: cheese))
         }
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        performSegue(withIdentifier: "toMainSegue", sender: self)
+        
+    }
     
     
     
