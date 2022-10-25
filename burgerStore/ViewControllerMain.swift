@@ -26,10 +26,11 @@ class ViewControllerMain: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toMenuSegue"{
-            let nvc = segue.destination as! ViewControllerMenu //force dsowncasts as ViewControllerBlue nvc stands for next view controller
+            let nvc = segue.destination as! ViewControllerMenu
+            nvc.burgers = burgers//force dsowncasts as ViewControllerBlue nvc stands for next view controller
         }
         if segue.identifier == "toBuySegue"{
-                    let nvc = segue.destination as! ViewControllerMenu //force dsowncasts as ViewControllerBlue nvc stands for next view controller
+                    let nvc = segue.destination as! ViewControllerBuy //force dsowncasts as ViewControllerBlue nvc stands for next view controller
             //nvc.name = textOutlet.text! //alows access within desitnation
         }
     }
@@ -39,7 +40,7 @@ class ViewControllerMain: UIViewController {
         updateMenu(burgers)
     }
     func updateMenu(_ newArray: [Burger]){
-        menuOutlet.text! = ""
+        menuOutlet.text! = "----------\n"
         for i in 0..<newArray.count{
             menuOutlet.text = menuOutlet.text! + "\(newArray[i].patty) patty's"
             if newArray[i].cheese{
@@ -69,8 +70,7 @@ class ViewControllerMain: UIViewController {
             if newArray[i].bbqsauce{
                 menuOutlet.text = menuOutlet.text! + ", bbqsauce"
             }
-            menuOutlet.text?.append("\n")
-            print("burgered")
+            menuOutlet.text?.append("\n----------\n")
         }
     }
 }

@@ -59,11 +59,15 @@ class ViewControllerMenu: UIViewController {
             {
             case 0:
             bType = .plain
+            toppingView.isHidden = true
             case 1:
             bType = .cheese
+            toppingView.isHidden = true
             case 2:
             bType = .deluxe
+            toppingView.isHidden = true
             case 3:
+            bType = .custom
             toppingView.isHidden = false
             default:
             toppingView.isHidden = true
@@ -182,6 +186,7 @@ class ViewControllerMenu: UIViewController {
         }
         else{
             burgers.append(Burger(ketchup: ketchup, patty: patty, bbqsauce: bbqsauce, mushroom: mushroom, lettuce: lettuce, tomato: tomato, onion: onion, bacon: bacon, mayo: mayo, cheese: cheese))
+            print("Custom")
         }
     }
     override func viewWillDisappear(_ animated: Bool) {
